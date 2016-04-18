@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="/octicons/octicons.css">
+    </head>
+    <body>
+      <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+      <script src="http://localhost:35729/livereload.js" type="text/javascript">
+
+      </script>
+
+      <div id="app" class="container">
+        <h1>EYP Deutschland Signaturengenerator</h1>
+        <a class="credit" target="_blank" href="https://github.com/wolfskaempf"><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by @wolfskaempf</a>
+        <h2>Deine Daten</h2>
+        <form class="" action="index.html" method="post">
+          <label>Vorname </label><input class="form-control" v-model="fname"><br>
+          <label>Nachname </label><input class="form-control" v-model="surname"><br>
+          <label>Position (DE)</label><input class="form-control" v-model="posde"><br>
+          <label>Position (EN)</label><input class="form-control" v-model="posen"><br>
+          <label>Sitzungsname (DE)</label><input class="form-control" v-model="sessionde"><br>
+          <label>Sitzungsname (EN)</label><input class="form-control" v-model="sessionen"><br>
+          <label>Handynummer </label><input class="form-control" v-model="mobilenumber"><br>
+          <label>E-Mail </label><input class="form-control" v-model="email"><br>
+        </form>
+        <h2>Deine Signatur</h2>
+      <p>--<br>
+        {{ fname }} {{ surname }}
+      </p>
+
+      <p>
+        {{ posde }} <hyphen v-show="sessionde">-</hyphen> {{ sessionde }}<br>
+        {{ posen }} <hyphen v-show="sessionen">-</hyphen> {{ sessionen }}
+      </p>
+
+
+
+        <p>Europäisches Jugendparlament in Deutschland e.V.<br>
+        European Youth Parliament Germany<br><br>
+
+        Sophienstr. 28-29<br>
+        10178 Berlin<br><br>
+
+        Tel.: +49 (0) 30 280 95-155<br>
+        Fax: +49 (0) 30 280 95-150<br>
+        Mobil: {{ mobilenumber }}<br>
+        E-Mail: <a href="mailto:{{ email }}">{{ email }}</a></p>
+
+        <p>Europa verstehen, Kulturen erleben, Fähigkeiten entwickeln.<br>
+        <a href="http://www.eyp.de/sitzungen/nap2015/" target="_blank">Werde aktiv</a> beim Europäischen Jugendparlament!</p>
+
+        <p class="small">Bitte denken Sie an die Umwelt, bevor Sie diese E-Mail ausdrucken.<br>
+        Please consider the environment before printing this e-mail.</p>
+
+
+
+      </div>
+      <script src="app.js"></script>
+
+    </body>
+</html>
