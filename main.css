@@ -18,3 +18,7 @@
   color: grey;
   transition-duration: 200ms;
 }
+
+#app {
+  margin-bottom: 50px;
+}
