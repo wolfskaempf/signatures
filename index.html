@@ -31,34 +31,29 @@
           <label>E-Mail </label><input class="form-control" v-model="email"><br>
         </form>
         <h2>Deine Signatur</h2>
-      <p>--<br>
-        {{ fname }} {{ surname }}
-      </p>
-
+      <p>--</p>
       <p>
-        {{ posde }} <hyphen v-show="sessionde">—</hyphen> {{ sessionde }}<br>
+        {{ fname }} {{ surname }}
+        <br />
+        {{ posde }} <hyphen v-show="sessionde">—</hyphen> {{ sessionde }}
+        <br />
         {{ posen }} <hyphen v-show="sessionen">—</hyphen> {{ sessionen }}
+        <br /><br />
+        Mobil: {{ mobilenumber }}
+        <br />
+        E-Mail: <a href="mailto:{{ email }}">{{ email }}</a>
       </p>
-
-
-
-        <p>Europäisches Jugendparlament in Deutschland e.V.<br>
-        European Youth Parliament Germany<br><br>
-
-        Sophienstr. 28-29<br>
-        10178 Berlin<br><br>
-
-        Tel.: +49 (0) 30 280 95-155<br>
-        Fax: +49 (0) 30 280 95-150<br>
-        Mobil: {{ mobilenumber }}<br>
-        E-Mail: <a href="mailto:{{ email }}">{{ email }}</a></p>
-
-        <p>Europa verstehen, Kulturen erleben, Fähigkeiten entwickeln.<br>
-        <a href="http://www.eyp.de/mitmachen" target="_blank">Werde aktiv</a> beim Europäischen Jugendparlament!</p>
-
-        <p class="small">Bitte denken Sie an die Umwelt, bevor Sie diese E-Mail ausdrucken.<br>
-        Please consider the environment before printing this e-mail.</p>
-
+      <p>
+        <adress>
+          Europäisches Jugendparlament in Deutschland e.V.
+          <br />
+          Sophienstr. 28-29 | 10178 Berlin
+        </adress><br />
+        Tel.: +49 (0) 30 2 80 95-155
+      </p>
+      <p>
+        <a href="http://www.eyp.de">www.eyp.de</a>
+      </p>
         <h2>Hilfe</h2>
 
         <ul>
