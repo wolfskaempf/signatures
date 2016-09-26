@@ -22,3 +22,9 @@
 #app {
   margin-bottom: 50px;
 }
+
+.signatur {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 10px;
+  color: black;
+}
