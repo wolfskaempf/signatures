@@ -5,9 +5,11 @@ new Vue({
         surname: 'Mustermann',
         posde: 'Projektmitarbeiter',
         posen: 'Project Assistant',
-        sessionde: '30. Nationale Auswahlsitzung Würzburg 2020',
-        sessionen: '30th National Selection Conference Würzburg 2020',
+        sessionde: 'Nationale Auswahlsitzung Bad Segeberg 2022',
+        sessionen: 'National Selection Conference Bad Segeberg 2022',
         mobilenumber: '+49 (0) 123 456 78 90',
         email: 'max.mustermann@eyp.de',
+        genderde: 'er/ihm',
+        genderen: 'he/him',
     }
 });
