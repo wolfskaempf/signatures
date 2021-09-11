@@ -1,13 +1,15 @@
 new Vue({
     el: '#app',
     data: {
-        fname: 'Max',
-        surname: 'Mustermann',
-        posde: 'Projektmitarbeiter',
+        fname: 'Marie',
+        surname: 'Musterfrau',
+        posde: 'Projektmitarbeiterin',
         posen: 'Project Assistant',
-        sessionde: '30. Nationale Auswahlsitzung Würzburg 2020',
-        sessionen: '30th National Selection Conference Würzburg 2020',
+        sessionde: 'Nationale Auswahlsitzung Bad Segeberg 2022',
+        sessionen: 'National Selection Conference Bad Segeberg 2022',
         mobilenumber: '+49 (0) 123 456 78 90',
-        email: 'max.mustermann@eyp.de',
+        email: 'marie.musterfrau@eyp.de',
+        genderde: 'sie/ihr',
+        genderen: 'she/her',
     }
 });
