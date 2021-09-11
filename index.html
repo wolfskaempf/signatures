@@ -23,6 +23,8 @@
         <form class="" action="index.html" method="post">
           <label>Vorname </label><input class="form-control" v-model="fname"><br>
           <label>Nachname </label><input class="form-control" v-model="surname"><br>
+          <label>Geschlecht (DE)</label><input class="form-control" v-model="genderde"><br>
+          <label>Geschlecht (EN)</label><input class="form-control" v-model="genderen"><br>
           <label>Position (DE)</label><input class="form-control" v-model="posde"><br>
           <label>Position (EN)</label><input class="form-control" v-model="posen"><br>
           <label>Sitzungsname (DE)</label><input class="form-control" v-model="sessionde"><br>
@@ -36,9 +38,11 @@
       <p>
         {{ fname }} {{ surname }}
         <br />
-        {{ posde }} <hyphen v-show="sessionde">—</hyphen> {{ sessionde }}
+        {{ posde }} <p> | </p> {{ posen }}
         <br />
-        {{ posen }} <hyphen v-show="sessionen">—</hyphen> {{ sessionen }}
+        {{ sessionde }} <p> | </p> {{ sessionen }}
+        <br />
+        {{ genderde }} <p> | </p> {{ genderen }}
         <br /><br />
         Mobil: {{ mobilenumber }}
         <br />
